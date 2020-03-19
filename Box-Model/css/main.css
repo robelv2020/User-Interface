@@ -1,0 +1,148 @@
+/* reset css */
+
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;  
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+}
+
+/* HTML5 display-role reset */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* every element is a border-box */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* start your css here */
+
+body {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* class styles */
+
+.nav_bar {
+    /* comment out border when done testing */
+    border: 2px solid black;
+    margin: 1%;
+    padding: 1%;
+    width: 100%;
+}
+
+.nav_bar a {
+    border: 2px solid green;
+    margin: 2%;
+}
+
+.content_1 {
+    /* comment out border when done testing */
+    border: 2px solid red;
+    margin: 1%;
+    width: 100%;
+}
+
+.content_1_box {
+    /* comment out border when done testing */
+    border: 2px solid blue;
+    display: inline-block;
+    /* if you want a margin of a certain % for equal-sized
+        boxes then follow this forumla:
+        Box Width = (100 - ((margin% * # of boxes) * 2)) / (# of boxes)
+        Example: Box Width = (100 - (1 * 2)) / 4 = 23%
+        So if you have 4 equal sized boxes with a margin
+        of 1% your box width will be 23% for dynamic sizing
+    */
+    margin: 1%;
+    width: 23%;
+    min-width: 150px;
+}
+
+.content_2 {
+    /* comment out border when done testing */
+    border: 2px solid red;
+    margin: 1%;
+    width: 100%;
+}
+
+.content_2_box {
+    border: 2px solid blue;
+    display: inline-block;
+    vertical-align: top;
+    margin: 1%;
+    width: 48%;
+    min-width: 250px;
+}
+
+.content_3 {
+    border: 2px solid red;
+    margin: 1%;
+    width: 100%;
+}
+
+.content_3_inner {
+    border: 2px solid blue;
+    display: inline-block;
+    vertical-align: top;
+    margin: 1%;
+    min-height: 20%;
+    width: 48%;
+}
+
+.content_3_inner_left_box {
+    border: 2px solid green;
+    min-height: 200px;
+    margin: 1%;
+    width: 98%;
+}
+
+.content_3_inner_right_box {
+    border: 2px solid green;
+    display: inline-block;
+    min-height: 100px;
+    margin: 1%;
+    width: 48%;
+}
